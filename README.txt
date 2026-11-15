@@ -1,0 +1,7 @@
+WARKWORTH AFC SUMMER FOOTBALL — GITHUB PAGES + GOOGLE SHEETS
+1. Import results.csv into a new dedicated Google spreadsheet. Keep all headings and IDs. Only edit home_score and away_score. Leave unplayed matches blank.
+2. File > Share > Publish to web. Select the results tab (not entire workbook), choose CSV and publish. Enable automatic republication if offered. Copy the published URL (ends in output=csv). Only public fixtures and approved scores belong in this spreadsheet; keep manager submissions and player details in a separate private spreadsheet.
+3. Open script.js and paste the URL between the quotes in const RESULTS_URL near the top. Save.
+4. Create a public GitHub repository, e.g. warkworth-summer-football. Upload the contents of this folder to the root. In Settings > Pages choose Deploy from a branch, main, / (root), Save. Open the URL GitHub provides.
+5. Enter both scores in the Sheet each week. The website checks every minute and on Refresh scores. Google publication caching can delay changes. Blank both score cells to clear a result. The website reads only; there is no public score editor. To test, enter a temporary 2–1, verify, then clear both cells and verify again.
+No live URL or deployment is configured yet. The bundled CSV is used only when no URL is configured. U12/13 draw supplied through 1 Dec; U7–U9 through 15 Dec; U10–U11 through 19 Jan; seniors through 2 Mar. All IDs are stable. Points 3/1/0; goal difference then goals scored then alphabetical display.
